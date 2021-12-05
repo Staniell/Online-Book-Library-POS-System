@@ -1,0 +1,14 @@
+﻿
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 60%; 
+    height: 60%;
+    margin: auto;
+}
+.carousel-indicators {
+    text-align: right;
+    float: right;
+    right: 1% !important;
+    left: inherit;
+}

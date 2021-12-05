@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="mp.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="Style.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+  
+    <style type="text/css">
+        .auto-style3 {
+            left: 0px;
+            top: -50px;
+            height: 72px;
+        }
+   
+        .auto-style5 {
+            width: 200px;
+            cursor: pointer;
+            position: absolute;
+            margin: auto;
+            padding-top: 0px;
+            left: -11px;
+            top: -51px;
+           
+          
+        }
+        .auto-style6 {
+            height: 3px;
+        }
+
+        a:hover
+        {
+            background-color: transparent !important;
+            text-decoration:underline !important;
+            color: #FAC128 !important;
+        }
+        .button
+        {
+            font-size:x-large;
+            font-weight:bold;
+        }
+    </style>
+  
+  
+</head>
+<body class="bg" style="left: 0px; top: 0px; height:603px">
+    <form id="form1" runat="server">
+        <div id="leaves" class="auto-style3">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i> 
+        </div>
+            <div class="auto-style6">
+                <img src="images/logo.png" class="auto-style5">
+            </div>
+            <div class="text-warning" style="background-color: transparent; height:60px">
+                <ul id="Navigation" class="nav nav-pills navbar-left" runat="server">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:#FFFFFF" href="Home.aspx">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:#FFFFFF" runat="server" onserverclick="Unnamed_ServerClick6" href="GenrePage.aspx">BOOK CATALOG</a>
+
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:#FFFFFF" href="bestseller.aspx">BEST SELLERS</a>
+                  </li>
+                </ul>
+                <ul id="Right_Navigation" class="nav nav-pills navbar-right" runat="server" style="color: #FFFFFF">
+                <li id="account" class="nav-item">
+                    <a runat="server" id="AccountNav" class="nav-link" href="account.aspx" style="align-content:end; color: #FFFFFF">
+                        <asp:Label ID="Label2" runat="server" Font-Bold="true" Font-Size="22px"></asp:Label>  </a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sign in.aspx" runat="server" onserverclick="Unnamed_ServerClick5" style="align-content:end; color:#FFFFFF">
+                        <asp:Label ID="Label1" runat="server" Text="LOG IN / SIGN UP" CssClass="button"></asp:Label></a>
+                  </li>
+
+                <li id="cart" class="nav-item">
+                    <a runat="server" id="CartNav" class="nav-link" style="color:#FFFFFF;font-weight:bold;font-size:x-large;" href="Cart.aspx" >CART</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:#FFFFFF;font-weight:bold;font-size:x-large;" href="AboutUs.aspx" >ABOUT US</a>
+                </li>
+                </ul>
+            </div>
+
+       
+        <div style="height: 20px">
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+           
+            </asp:ContentPlaceHolder>
+
+    </form>
+<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>

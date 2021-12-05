@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="backend_master.Master.cs" Inherits="mp.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>FoxTale Books Administrator Site</title>
+    <link href="WebStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="masterForm" runat="server">
+                <table id="navbarx" runat="server" class="NavBar" style="width:100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                        <td><asp:Button ID="HomeButton" runat="server" Text="Statistics" CssClass="buttonDesign" OnClick="HomeButton_Click" BorderStyle="None"/></td>
+                        <td><asp:Button ID="btnManageProducts" runat="server" Text="Manage Products" CssClass="buttonDesign" OnClick="btnManageProducts_Click" BorderStyle="None" Width="169px" /></td>
+                        <td><asp:Button ID="btnManageOrders" runat="server" Text="Manage Orders" CssClass="buttonDesign" OnClick="btnManageOrders_Click" BorderStyle="None"/></td>
+                        <td><asp:Button ID="btnManageAccount" runat="server" Text="Manage Account" CssClass="buttonDesign" OnClick="btnManageAccount_Click" BorderStyle="None"/></td>
+                        <td class="seperator"></td>
+                        <td><asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="buttonDesign" OnClick="btnLogout_Click" BorderStyle="None" Width="129px"/></td>
+                    </tr>
+                </table>
+            <div style="position: absolute; top: 110px; width: 100%;"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></div>
+    </form>
+</body>
+</html>

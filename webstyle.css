@@ -1,0 +1,149 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(Images/bgimagex.jpg);
+}
+
+.buttonDesign {
+    text-align: left;
+    font-size: large;
+    background-color: darkorange;
+}
+
+.PanelDesign {
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    position: center;
+    align-content: space-evenly;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.NavBar {
+    font-size: large;
+    height: 80px;
+    background-color: darkorange;
+    padding: 0;
+    margin: 0;
+}
+
+.seperator {
+    width: 100%;
+}
+
+.loginbox {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-40%,-15%);
+    width: 350px;
+    height: 540px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4pt orange;
+}
+
+.container-fluid {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 382px;
+    transform: translate(-40%,-15%);
+    height: auto;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    outline-color: darkorange;
+    outline-width: 8px;
+    outline-style: auto;
+}
+
+.user {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    top: calc(-180px/2);
+    left: calc(50% - 75px);
+    position: absolute;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 106, 0);
+}
+
+.lblemail, .lblpass {
+    font-weight: bold;
+    color: black;
+}
+
+.txtemail, .txtpass, .btnsubmit {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.txtemail, .txtpass {
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+placeholder {
+    color: rgba(255,255,255,.5);
+}
+
+.btnsubmit {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: rgb(58, 3, 3);
+    background-color: darkorange;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+}
+
+    .btnsubmit:hover {
+        background-color: orange;
+    }
+
+.btnforget {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+    .btnforget:hover {
+        text-decoration: underline;
+        color: rgb(255, 106, 0);
+    }
+
+.errorMessage {
+    color: darkred;
+}
+
+.tableCenter {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productList {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
